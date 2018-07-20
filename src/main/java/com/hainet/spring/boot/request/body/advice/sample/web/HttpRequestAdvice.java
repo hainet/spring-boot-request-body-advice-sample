@@ -36,7 +36,8 @@ public class HttpRequestAdvice extends RequestBodyAdviceAdapter {
             final Object body,
             final HttpInputMessage inputMessage,
             final MethodParameter parameter,
-            final Type targetType, Class<? extends HttpMessageConverter<?>> converterType) {
+            final Type targetType,
+            final Class<? extends HttpMessageConverter<?>> converterType) {
         try {
             log.info(this.mapper.writeValueAsString(body));
         } catch (JsonProcessingException e) {
