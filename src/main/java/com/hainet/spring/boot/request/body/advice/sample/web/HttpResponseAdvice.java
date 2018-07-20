@@ -14,7 +14,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 @RestControllerAdvice(assignableTypes = PersonController.class)
 public class HttpResponseAdvice implements ResponseBodyAdvice {
 
-    private static final Logger log = LoggerFactory.getLogger(HttpRequestAdvice.class);
+    private static final Logger log = LoggerFactory.getLogger(HttpResponseAdvice.class);
 
     private final ObjectMapper mapper;
 
