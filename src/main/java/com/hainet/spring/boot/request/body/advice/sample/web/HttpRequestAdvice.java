@@ -12,7 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestBodyAdviceAd
 
 import java.lang.reflect.Type;
 
-@RestControllerAdvice(assignableTypes = PersonController.class)
+@RestControllerAdvice
 public class HttpRequestAdvice extends RequestBodyAdviceAdapter {
 
     private static final Logger log = LoggerFactory.getLogger(HttpRequestAdvice.class);
